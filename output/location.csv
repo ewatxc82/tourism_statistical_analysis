@@ -1,4 +1,4 @@
-Country,Latitude,Longitude,ContinentName,CountryCode
+country,latitude,longitude,continent_name,country_code
 Aland Islands,60.11666700000001,19.9,Europe,ALA
 Albania,41.31666667,19.816667000000002,Europe,ALB
 Andorra,42.5,1.516667,Europe,AND
