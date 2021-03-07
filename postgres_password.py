@@ -1,1 +1,1 @@
-pass_word ="your password"
+pass_word ="1994"
