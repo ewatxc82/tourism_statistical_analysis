@@ -1,0 +1,62 @@
+country,latitude,longitude,country_code,continent_name
+Aland Islands,60.11666700000001,19.9,AX,Europe
+Albania,41.31666667,19.816667000000002,AL,Europe
+Andorra,42.5,1.516667,AD,Europe
+Armenia,40.16666667,44.5,AM,Europe
+Austria,48.2,16.366667,AT,Europe
+Azerbaijan,40.38333333,49.866667,AZ,Europe
+Belarus,53.9,27.566667,BY,Europe
+Belgium,50.83333333,4.3333330000000005,BE,Europe
+Bosnia and Herzegovina,43.86666667,18.416667,BA,Europe
+Bulgaria,42.68333333,23.316667000000002,BG,Europe
+Croatia,45.8,16.0,HR,Europe
+Cyprus,35.16666667,33.366667,CY,Europe
+Czech Republic,50.08333333,14.466667000000001,CZ,Europe
+Denmark,55.66666667,12.583333,DK,Europe
+Estonia,59.43333333,24.716667,EE,Europe
+Faroe Islands,62.0,-6.766667,FO,Europe
+Finland,60.16666667,24.933332999999998,FI,Europe
+France,48.86666667,2.333333,FR,Europe
+Georgia,41.68333333,44.833333,GE,Europe
+Germany,52.51666667,13.4,DE,Europe
+Gibraltar,36.13333333,-5.35,GI,Europe
+Greece,37.98333333,23.733333,GR,Europe
+Guernsey,49.45,-2.5333330000000003,GG,Europe
+Vatican City,41.9,12.45,VA,Europe
+Hungary,47.5,19.083333,HU,Europe
+Iceland,64.15,-21.95,IS,Europe
+Ireland,53.31666667,-6.233333,IE,Europe
+Isle of Man,54.15,-4.483333,IM,Europe
+Italy,41.9,12.483333,IT,Europe
+Jersey,49.18333333,-2.1,JE,Europe
+Kosovo,42.66666667,21.166667,KO,Europe
+Latvia,56.95,24.1,LV,Europe
+Liechtenstein,47.13333333,9.516667,LI,Europe
+Lithuania,54.68333333,25.316667000000002,LT,Europe
+Luxembourg,49.6,6.116667,LU,Europe
+Macedonia,42.0,21.433332999999998,MK,Europe
+Malta,35.88333333,14.5,MT,Europe
+Moldova,47.0,28.85,MD,Europe
+Monaco,43.73333333,7.4166669999999995,MC,Europe
+Montenegro,42.43333333,19.266667,ME,Europe
+Netherlands,52.35,4.9166669999999995,NL,Europe
+Norway,59.91666667,10.75,NO,Europe
+Poland,52.25,21.0,PL,Europe
+Portugal,38.71666667,-9.133333,PT,Europe
+Romania,44.43333333,26.1,RO,Europe
+Russia,55.75,37.6,RU,Europe
+San Marino,43.93333333,12.416667,SM,Europe
+Serbia,44.83333333,20.5,RS,Europe
+Slovakia,48.15,17.116667,SK,Europe
+Slovenia,46.05,14.516667000000002,SI,Europe
+Spain,40.4,-3.683333,ES,Europe
+Svalbard,78.21666667,15.633332999999999,SJ,Europe
+Sweden,59.33333333,18.05,SE,Europe
+Switzerland,46.91666667,7.466667,CH,Europe
+Turkey,39.93333333,32.866667,TR,Europe
+Ukraine,50.43333333,30.516666999999998,UA,Europe
+United Kingdom,51.5,-0.083333,GB,Europe
+Hong Kong,0.0,0.0,HK,Asia
+Heard Island and McDonald Islands,0.0,0.0,HM,Antarctica
+British Indian Ocean Territory,-7.3,72.4,IO,Africa
+Macau,0.0,0.0,MO,Asia
