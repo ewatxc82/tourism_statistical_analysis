@@ -56,6 +56,9 @@ Switzerland,Bern,46.91666667,7.466667,CH,Europe
 Turkey,Ankara,39.93333333,32.866667,TR,Europe
 Ukraine,Kyiv,50.43333333,30.516667,UA,Europe
 United Kingdom,London,51.5,-0.083333,GB,Europe
+<<<<<<< HEAD
+Northern Cyprus,North Nicosia,35.183333,33.366667,NULL,Europe
+=======
 Northern Cyprus,North Nicosia,35.183333,33.366667,NULL,Europe
 ,,,,,
 ,,,,,
@@ -244,3 +247,4 @@ Hong Kong,N/A,0,0,HK,Asia
 Heard Island and McDonald Islands,N/A,0,0,HM,Antarctica
 British Indian Ocean Territory,Diego Garcia,-7.3,72.4,IO,Africa
 Macau,N/A,0,0,MO,Asia
+>>>>>>> 2312cc6801c27d834a8f1f7d1e9dbe964685b5b4
