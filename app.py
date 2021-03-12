@@ -128,6 +128,10 @@ def handler_revenue_data():
 def index():
     return render_template("index.html")
 
+@app.route("/arrivals_map")
+def arrivals():
+    return render_template("index_arrivals.html")
+
 @app.route('/static/<path:path>')
 def send_js(path):
     return send_from_directory('static', path)
