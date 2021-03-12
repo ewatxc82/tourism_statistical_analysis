@@ -1,29 +1,12 @@
-DROP TABLE IF EXISTS clean_location;
-DROP TABLE IF EXISTS clean_book;
 DROP TABLE IF EXISTS clean_arrivals;
 DROP TABLE IF EXISTS clean_revenues;
 
 
-
-
-CREATE TABLE clean_location (
-	
-country VARCHAR,
-latitude numeric,
-longitude numeric,
-country_code VARCHAR PRIMARY KEY,
-continent_Name VARCHAR
-	
-);
-
-CREATE TABLE clean_book (
-country_code VARCHAR PRIMARY KEY,
-country_code2 VARCHAR
-
-);
-
 CREATE TABLE clean_arrivals (
-
+country	VARCHAR,
+latitude VARCHAR,	
+longitude VARCHAR,
+continent_name VARCHAR,	
 country_code VARCHAR PRIMARY KEY,
 total_arrivals_1995 numeric,
 total_arrivals_1996 numeric,
@@ -54,7 +37,11 @@ total_arrivals_2019 numeric
 );
 
 CREATE TABLE clean_revenues (
-    
+	
+country	VARCHAR,
+latitude VARCHAR,	
+longitude VARCHAR,
+continent_name VARCHAR,    
 country_code VARCHAR PRIMARY KEY,
 total_revenues_1995 numeric,
 total_revenues_1996 numeric,
@@ -84,7 +71,9 @@ total_revenues_2019 numeric
 
 );
 
-SELECT * FROM clean_location;
-SELECT * FROM clean_book;
+
+
 SELECT * FROM clean_arrivals;
 SELECT * FROM clean_revenues;
+
+
