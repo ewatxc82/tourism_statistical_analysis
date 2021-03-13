@@ -163,68 +163,68 @@ $.getJSON("/tourism_revenue")
         var info = processData(data);
         createPropSymbols(info.timestamps, data);
         createLegend(info.min, info.max);
-        createSliderUI(info.timestamps);
+        // createSliderUI(info.timestamps);
     })
     .fail(function () { alert('There has been a problem loading the data.') })
 
 
-function createLegend(min, max) {
+// function createLegend(min, max) {
 
-    if (min < 12000) {
-        min = 12000;
-    }
+//     if (min < 12000) {
+//         min = 12000;
+//     }
 
-    function roundNumber(inNumber) {
+//     function roundNumber(inNumber) {
 
-        return (Math.round(inNumber / 10) * 10);
-    }
+//         return (Math.round(inNumber / 10) * 10);
+//     }
 
-    var legend = L.control({ position: 'bottomleft' });
+//     var legend = L.control({ position: 'bottomleft' });
 
-    legend.onAdd = function (map) {
+//     legend.onAdd = function (map) {
 
-        var legendContainer = L.DomUtil.create('div', "legend");
-        var symbolsContainer = L.DomUtil.create('div', 'symbolsContainer');
-        var classes = [roundNumber(min), roundNumber((max - min) / 2), roundNumber(max)];
-        var legendCircle;
-        var lastRadius = 0;
-        var currentRadius;
-        var margin;
+//         var legendContainer = L.DomUtil.create('div', "legend");
+//         var symbolsContainer = L.DomUtil.create('div', 'symbolsContainer');
+//         var classes = [roundNumber(min), roundNumber((max - min) / 2), roundNumber(max)];
+//         var legendCircle;
+//         var lastRadius = 0;
+//         var currentRadius;
+//         var margin;
 
-        L.DomEvent.addListener(legendContainer, 'mousedown', function (e) {
-            L.DomEvent.stopPropagation(e);
-        });
+//         L.DomEvent.addListener(legendContainer, 'mousedown', function (e) {
+//             L.DomEvent.stopPropagation(e);
+//         });
 
-        $(legendContainer).append("<h2 id='legendTitle'>Revenues</h2>");
+//         $(legendContainer).append("<h2 id='legendTitle'>Revenues</h2>");
 
-        for (var i = 0; i <= classes.length - 1; i++) {
+//         for (var i = 0; i <= classes.length - 1; i++) {
 
-            legendCircle = L.DomUtil.create('div', 'legendCircle');
+//             legendCircle = L.DomUtil.create('div', 'legendCircle');
 
-            currentRadius = calcPropRadius(classes[i]);
+//             currentRadius = calcPropRadius(classes[i]);
 
-            margin = -currentRadius - lastRadius - 2;
+//             margin = -currentRadius - lastRadius - 2;
 
-            $(legendCircle).attr('style', 'width: ' + currentRadius * 2 +
-                'px; height: ' + currentRadius * 2 +
-                'px; margin-left: ' + margin + 'px');
-            $(legendCircle).append("<span class='legendValue'>" + classes[i] + "</span>");
+//             $(legendCircle).attr('style', 'width: ' + currentRadius * 2 +
+//                 'px; height: ' + currentRadius * 2 +
+//                 'px; margin-left: ' + margin + 'px');
+//             $(legendCircle).append("<span class='legendValue'>" + classes[i] + "</span>");
 
-            $(symbolsContainer).append(legendCircle);
+//             $(symbolsContainer).append(legendCircle);
 
-            lastRadius = currentRadius;
+//             lastRadius = currentRadius;
 
-        }
+//         }
 
-        $(legendContainer).append(symbolsContainer);
+//         $(legendContainer).append(symbolsContainer);
 
-        return legendContainer;
+//         return legendContainer;
 
-    };
+//     };
 
-    legend.addTo(map);
+//     legend.addTo(map);
 
-} // end createLegend()
+// } // end createLegend()
 
 
 
