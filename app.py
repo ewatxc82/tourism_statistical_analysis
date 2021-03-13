@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, redirect, request,send_from_directory
+from flask import Flask, jsonify, render_template, redirect, request, send_from_directory
 from sqlalchemy import create_engine, func
 from sqlalchemy.orm import Session
 import sqlalchemy
@@ -34,7 +34,7 @@ def handler_arrival_data():
         feature_dict['type'] = 'Feature'
         feature_dict['geometry'] = {
             'type': 'Point',
-            'coordinates': [(i.longitude),(i.latitude) ]
+            'coordinates': [(i.longitude), (i.latitude)]
         }
         feature_dict['properties'] = {
             'country': i.country,
@@ -85,7 +85,7 @@ def handler_revenue_data():
         feature_dict['type'] = 'Feature'
         feature_dict['geometry'] = {
             'type': 'Point',
-            'coordinates': [(i.longitude),(i.latitude)]
+            'coordinates': [(i.longitude), (i.latitude)]
         }
         feature_dict['properties'] = {
             'country': i.country,
@@ -123,21 +123,27 @@ def handler_revenue_data():
 
     revenues_dict['features'] = features
     return revenues_dict
-    
+
+
 @app.route("/arrivals_map")
 def arrivals():
     return render_template("index_arrivals.html")
 
 
+@app.route("/revenues_map")
+def revenues():
+    return render_template("index_revenues.html")
 
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
+
 @app.route('/static/<path:path>')
 def send_js(path):
     return send_from_directory('static', path)
+
 
 @app.after_request
 def add_header(r):
