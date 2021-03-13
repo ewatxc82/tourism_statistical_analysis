@@ -230,7 +230,7 @@ function createLegend(min, max) {
 
 function createSliderUI(timestamps) {
 
-    var sliderControl = L.control({ position: 'bottomright' });
+    var sliderControl = L.control({ position: 'bottomleft' });
 
     sliderControl.onAdd = function (map) {
 
