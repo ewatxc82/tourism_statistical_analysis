@@ -34,36 +34,36 @@ def handler_arrival_data():
         feature_dict['type'] = 'Feature'
         feature_dict['geometry'] = {
             'type': 'Point',
-            'coordinates': [(i.latitude), (i.longitude)]
+            'coordinates': [(i.longitude),(i.latitude) ]
         }
         feature_dict['properties'] = {
             'country': i.country,
             'country_code': i.country_code,
-            "1995": float(i.total_arrivals_1995),
-            "1996": float(i.total_arrivals_1996),
-            "1997": float(i.total_arrivals_1997),
-            "1998": float(i.total_arrivals_1998),
-            "1999": float(i.total_arrivals_1999),
-            "2000": float(i.total_arrivals_2000),
-            "2001": float(i.total_arrivals_2001),
-            "2002": float(i.total_arrivals_2002),
-            "2003": float(i.total_arrivals_2003),
-            "2004": float(i.total_arrivals_2004),
-            "2005": float(i.total_arrivals_2005),
-            "2006": float(i.total_arrivals_2006),
-            "2007": float(i.total_arrivals_2007),
-            "2008": float(i.total_arrivals_2008),
-            "2009": float(i.total_arrivals_2009),
-            "2010": float(i.total_arrivals_2010),
-            "2011": float(i.total_arrivals_2011),
-            "2012": float(i.total_arrivals_2012),
-            "2013": float(i.total_arrivals_2013),
-            "2014": float(i.total_arrivals_2014),
-            "2015": float(i.total_arrivals_2015),
-            "2016": float(i.total_arrivals_2016),
-            "2017": float(i.total_arrivals_2017),
-            "2018": float(i.total_arrivals_2018),
-            "2019": float(i.total_arrivals_2019)
+            "arrival_1995": float(i.total_arrivals_1995),
+            "arrival_1996": float(i.total_arrivals_1996),
+            "arrival_1997": float(i.total_arrivals_1997),
+            "arrival_1998": float(i.total_arrivals_1998),
+            "arrival_1999": float(i.total_arrivals_1999),
+            "arrival_2000": float(i.total_arrivals_2000),
+            "arrival_2001": float(i.total_arrivals_2001),
+            "arrival_2002": float(i.total_arrivals_2002),
+            "arrival_2003": float(i.total_arrivals_2003),
+            "arrival_2004": float(i.total_arrivals_2004),
+            "arrival_2005": float(i.total_arrivals_2005),
+            "arrival_2006": float(i.total_arrivals_2006),
+            "arrival_2007": float(i.total_arrivals_2007),
+            "arrival_2008": float(i.total_arrivals_2008),
+            "arrival_2009": float(i.total_arrivals_2009),
+            "arrival_2010": float(i.total_arrivals_2010),
+            "arrival_2011": float(i.total_arrivals_2011),
+            "arrival_2012": float(i.total_arrivals_2012),
+            "arrival_2013": float(i.total_arrivals_2013),
+            "arrival_2014": float(i.total_arrivals_2014),
+            "arrival_2015": float(i.total_arrivals_2015),
+            "arrival_2016": float(i.total_arrivals_2016),
+            "arrival_2017": float(i.total_arrivals_2017),
+            "arrival_2018": float(i.total_arrivals_2018),
+            "arrival_2019": float(i.total_arrivals_2019)
 
         }
         features.append(feature_dict)
@@ -85,7 +85,7 @@ def handler_revenue_data():
         feature_dict['type'] = 'Feature'
         feature_dict['geometry'] = {
             'type': 'Point',
-            'coordinates': [(i.latitude), (i.longitude)]
+            'coordinates': [(i.longitude),(i.latitude)]
         }
         feature_dict['properties'] = {
             'country': i.country,
@@ -120,17 +120,20 @@ def handler_revenue_data():
         features.append(feature_dict)
     revenues_dict = {}
     revenues_dict['type'] = 'FeatureCollection'
+
     revenues_dict['features'] = features
     return revenues_dict
+    
+@app.route("/arrivals_map")
+def arrivals():
+    return render_template("index_arrivals.html")
+
+
 
 
 @app.route("/")
 def index():
     return render_template("index.html")
-
-@app.route("/arrivals_map")
-def arrivals():
-    return render_template("index_arrivals.html")
 
 @app.route('/static/<path:path>')
 def send_js(path):
