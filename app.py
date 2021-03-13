@@ -11,13 +11,13 @@ app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
 # DATABASE_URL will contain the database connection string:
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgres://fwvlwpzzlnmqfe:4d21f6bd36ec258c6b79607f516bc368cab9fff5fe366858af6effd4eaaececb@ec2-54-164-22-242.compute-1.amazonaws.com:5432/dbmfvu9hjkbqpo')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgres://xyapznezeaqswq:563af6f1a293c52937083ed16940c84d274b616f8e2202c9cd74c95ae39916b8@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d4g7j0al3kor5t')
 # Connects to the database using the app config
 db = SQLAlchemy(app)
 
 def confg():
     engine = create_engine(
-        'postgres://fwvlwpzzlnmqfe:4d21f6bd36ec258c6b79607f516bc368cab9fff5fe366858af6effd4eaaececb@ec2-54-164-22-242.compute-1.amazonaws.com:5432/dbmfvu9hjkbqpo')
+        'postgres://xyapznezeaqswq:563af6f1a293c52937083ed16940c84d274b616f8e2202c9cd74c95ae39916b8@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d4g7j0al3kor5t')
     Base = automap_base()
     Base.prepare(engine, reflect=True)
     Base.classes.keys()
