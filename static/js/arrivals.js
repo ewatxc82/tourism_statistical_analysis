@@ -139,7 +139,7 @@ function updatePropSymbols(timestamp) {
 
         var props = layer.feature.properties;
         var radius = calcPropRadius(props[timestamp]) / 10000;
-        var popupContent = '<b>' + '$' + String(props[timestamp]) +
+        var popupContent = '<b>' + 'M' + String(props[timestamp]) +
             '</b><br>' +
             '<i>' + props.country +
             '</i> in </i>' +
