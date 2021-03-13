@@ -3,15 +3,21 @@ from sqlalchemy import create_engine, func
 from sqlalchemy.orm import Session
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
+import os
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
+# DATABASE_URL will contain the database connection string:
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgres://fwvlwpzzlnmqfe:4d21f6bd36ec258c6b79607f516bc368cab9fff5fe366858af6effd4eaaececb@ec2-54-164-22-242.compute-1.amazonaws.com:5432/dbmfvu9hjkbqpo')
+# Connects to the database using the app config
+db = SQLAlchemy(app)
 
 def confg():
     engine = create_engine(
-        'postgres://udzvgdqrxtyyth:60a6be53b341bf30f17eab6d20de5236c641ec4bd57c153c957b45218b495f94@ec2-54-164-22-242.compute-1.amazonaws.com:5432/d6dnn6t5pmuopd')
+        'postgres://fwvlwpzzlnmqfe:4d21f6bd36ec258c6b79607f516bc368cab9fff5fe366858af6effd4eaaececb@ec2-54-164-22-242.compute-1.amazonaws.com:5432/dbmfvu9hjkbqpo')
     Base = automap_base()
     Base.prepare(engine, reflect=True)
     Base.classes.keys()
