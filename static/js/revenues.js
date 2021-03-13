@@ -267,7 +267,7 @@ function createSliderUI(timestamps) {
 
 function createTemporalLegend(startTimestamp) {
 
-    var temporalLegend = L.control({ position: 'bottomright' });
+    var temporalLegend = L.control({ position: 'bottomleft' });
 
     temporalLegend.onAdd = function (map) {
         var output = L.DomUtil.create('output', 'temporal-legend');
