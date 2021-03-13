@@ -31,7 +31,7 @@ def confg():
 @app.route("/tourism_arr", methods=["GET"])
 def handler_arrival_data():
 
-    Base, arrivals, revenues, session = confg()
+    Base, arrivals, session = confg()
     arrivals = Base.classes.clean_arrivals
     arrival = session.query(arrivals).all()
     features = []
@@ -82,7 +82,7 @@ def handler_arrival_data():
 @app.route("/tourism_revenue", methods=["GET"])
 def handler_revenue_data():
 
-    Base, arrivals, revenues, session = confg()
+    Base,revenues, session = confg()
     revenues = Base.classes.clean_revenues
     revenue = session.query(revenues).all()
     features = []
