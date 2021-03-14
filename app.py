@@ -10,10 +10,10 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
-# # DATABASE_URL will contain the database connection string:
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgres://xyapznezeaqswq:563af6f1a293c52937083ed16940c84d274b616f8e2202c9cd74c95ae39916b8@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d4g7j0al3kor5t')
-# # Connects to the database using the app config
-# db = SQLAlchemy(app)
+# DATABASE_URL will contain the database connection string:
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgres://xyapznezeaqswq:563af6f1a293c52937083ed16940c84d274b616f8e2202c9cd74c95ae39916b8@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d4g7j0al3kor5t')
+# Connects to the database using the app config
+db = SQLAlchemy(app)
 
 def confg():
     engine = create_engine(
@@ -31,7 +31,7 @@ def confg():
 @app.route("/tourism_arr", methods=["GET"])
 def handler_arrival_data():
 
-    Base, arrivals, session = confg()
+    Base, arrivals, revenues, session = confg()
     arrivals = Base.classes.clean_arrivals
     arrival = session.query(arrivals).all()
     features = []
@@ -82,7 +82,7 @@ def handler_arrival_data():
 @app.route("/tourism_revenue", methods=["GET"])
 def handler_revenue_data():
 
-    Base,revenues, session = confg()
+    Base, arrivals, revenues, session = confg()
     revenues = Base.classes.clean_revenues
     revenue = session.query(revenues).all()
     features = []
