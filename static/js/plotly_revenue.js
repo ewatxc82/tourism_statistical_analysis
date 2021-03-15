@@ -38,7 +38,7 @@ Plotly.d3.json('/country_revenue_2009', function (err, values) {
         title: 'Revenues In 2009',
         geo: {
             projection: {
-                type: 'Robinson '
+                type: 'Robinson'
             }
         }
     };
