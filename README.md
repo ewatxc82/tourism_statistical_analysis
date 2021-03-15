@@ -13,3 +13,6 @@ the project is primarily based on data provided by https://data.worldbank.org/in
 
 The second part of the data comes from the Techslides website where the latitude and longitude for the different countries in Europe are going to extracted.
 http://techslides.com/list-of-countries-and-capitals (edited) 
+
+
+![euro_map_1](https://giphy.com/gifs/4XUSjIp1ebkwxnvRV3)
