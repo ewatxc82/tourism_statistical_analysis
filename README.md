@@ -16,3 +16,5 @@ http://techslides.com/list-of-countries-and-capitals (edited)
 
 
 ![euro_map_1](https://media.giphy.com/media/4XUSjIp1ebkwxnvRV3/giphy.gif)
+
+![euro_map_2](https://media.giphy.com/media/3J9LGtrFENusv3m0Hq/giphy.gif)
