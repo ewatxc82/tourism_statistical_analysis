@@ -4,16 +4,12 @@ from sqlalchemy.orm import Session
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 import os
-from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
-# DATABASE_URL will contain the database connection string:
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgres://xyapznezeaqswq:563af6f1a293c52937083ed16940c84d274b616f8e2202c9cd74c95ae39916b8@ec2-52-21-252-142.compute-1.amazonaws.com:5432/d4g7j0al3kor5t')
-# Connects to the database using the app config
-db = SQLAlchemy(app)
+
 
 def confg():
     engine = create_engine(
@@ -31,7 +27,7 @@ def confg():
 @app.route("/tourism_arr", methods=["GET"])
 def handler_arrival_data():
 
-    Base, arrivals, session = confg()
+    Base, arrivals, revenues, session = confg()
     arrivals = Base.classes.clean_arrivals
     arrival = session.query(arrivals).all()
     features = []
@@ -79,10 +75,11 @@ def handler_arrival_data():
     return arrivals_dict
 
 
+
 @app.route("/tourism_revenue", methods=["GET"])
 def handler_revenue_data():
 
-    Base,revenues, session = confg()
+    Base, arrivals, revenues, session = confg()
     revenues = Base.classes.clean_revenues
     revenue = session.query(revenues).all()
     features = []
@@ -130,10 +127,32 @@ def handler_revenue_data():
     revenues_dict['features'] = features
     return revenues_dict
 
+@app.route("/country_arrival_2019", methods=["GET"])
+def handler_arrival_country():
+
+    Base, arrivals, revenues, session = confg()
+    arrival = session.query(arrivals).all()
+    country_arrival_2019={"arrival_2019": [],
+    "country":[]}
+
+    for person in arrival:
+        country_arrival_2019["arrival_2019"].append(float(person.total_arrivals_2019))
+        country_arrival_2019["country"].append(person.country)
+    
+    return country_arrival_2019
+
 
 @app.route("/arrivals_map")
 def arrivals():
     return render_template("index_arrivals.html")
+
+@app.route("/plotly_map")
+def plotly():
+    return render_template("index_plotly.html")
+
+@app.route("/chro_plotly")
+def map_2019():
+    return render_template("plotly_map.html")
 
 
 @app.route("/revenues_map")
