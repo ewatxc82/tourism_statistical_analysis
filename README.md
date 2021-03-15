@@ -15,4 +15,4 @@ The second part of the data comes from the Techslides website where the latitude
 http://techslides.com/list-of-countries-and-capitals (edited) 
 
 
-![euro_map_1](https://giphy.com/gifs/4XUSjIp1ebkwxnvRV3)
+![euro_map_1](https://media.giphy.com/media/4XUSjIp1ebkwxnvRV3/giphy.gif)
