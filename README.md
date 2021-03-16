@@ -25,14 +25,37 @@ http://techslides.com/list-of-countries-and-capitals
 -Pandas
 -Flask
 -SQLAlchemy
+-Postgres
 -HTML
 -CSS
+-Bootstrap
 -Javascript
 -D3
 -Plotly
 -Choropleth
+-Heroku
+-JQuery
+-Ajax
 
+## Processes
 
+### Data Transformation & Cleaning
+
+- We created CSV files for tourism arrivals, revenues and location
+- Country were used to find European countries
+- Pandas was utilized to clean data and create data frames
+- Datframes were connected to SQL using Postgres and a Tourism Database was created
+
+### Data Routes
+- Flask was used to created connection to the Postgres database
+- Routes were used to query the database and create a dictionary
+
+### Website Design
+
+![eurosite_1](https://media.giphy.com/media/77hnj5lZFkppdWrvqS/giphy.gif)
+
+-Bootstrap was used to create a theme for the page
+-Javascript files contain code for creating the plots on our maps
 
 ![euro_map_1](https://media.giphy.com/media/4XUSjIp1ebkwxnvRV3/giphy.gif)
 
