@@ -18,7 +18,20 @@ The first part of the data from this project comes from https://data.worldbank.o
 the project is primarily based on data provided by https://data.worldbank.org/indicator/ST.INT.RCPT.CD. The data contains tourist traces of millions of anonymized foreign visitors roaming Europe. This was detected in the form of receipts(revenues) and tourists arrivals in different European countries from 1995 -2019.
 
 The second part of the data comes from the Techslides website where the latitude and longitude for the different countries in Europe are going to extracted.
-http://techslides.com/list-of-countries-and-capitals (edited) 
+http://techslides.com/list-of-countries-and-capitals
+
+## Technologies Used
+
+-Pandas
+-Flask
+-SQLAlchemy
+-HTML
+-CSS
+-Javascript
+-D3
+-Plotly
+-Choropleth
+
 
 
 ![euro_map_1](https://media.giphy.com/media/4XUSjIp1ebkwxnvRV3/giphy.gif)
