@@ -71,7 +71,7 @@ http://techslides.com/list-of-countries-and-capitals
 - J Query and Ajax were used to create a map that plots growth or contraction of tourism revenue from 1995-2019 in European countries within the dataset. We've used the same slider and you can hover over each country to gather information on the year and amount of tourism receipts in the year.
 
 #### Choropleth Maps
-![euro_map_3](https://media.giphy.com/media/KilWKKuxpqDzvr8mNd/giphy.gif)
+![euro_map_3](https://media.giphy.com/media/H5bmCWmT4AwY0QGyMa/giphy.gif)
 
 ![euro_map_4](https://media.giphy.com/media/KilWKKuxpqDzvr8mNd/giphy.gif)
 
