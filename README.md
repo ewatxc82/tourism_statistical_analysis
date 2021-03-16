@@ -53,6 +53,7 @@ http://techslides.com/list-of-countries-and-capitals
 
 ### Website Design
 
+- Deployment: https://europetourism.herokuapp.com/
 - Bootstrap was used to create a theme for the page
 - Javascript files contain code for creating the plots on our maps
 
