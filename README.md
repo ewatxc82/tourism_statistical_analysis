@@ -22,20 +22,20 @@ http://techslides.com/list-of-countries-and-capitals
 
 ## Technologies Used
 
--Pandas
--Flask
--SQLAlchemy
--Postgres
--HTML
--CSS
--Bootstrap
--Javascript
--D3
--Plotly
--Choropleth
--Heroku
--JQuery
--Ajax
+- Pandas
+- Flask
+- SQLAlchemy
+- Postgres
+- HTML
+- CSS
+- Bootstrap
+- Javascript
+- D3
+- Plotly
+- Choropleth
+- Heroku
+- JQuery
+- Ajax
 
 ## Processes
 
