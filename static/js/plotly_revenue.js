@@ -13,6 +13,7 @@ Plotly.d3.json('/country_revenue_2019', function (err, values) {
     var layout = {
         title: 'Revenues In 2019',
         geo: {
+            // scope:"europe",
             projection: {
                 type: 'Robinson '
             }
@@ -37,6 +38,7 @@ Plotly.d3.json('/country_revenue_2009', function (err, values) {
     var layout = {
         title: 'Revenues In 2009',
         geo: {
+            // scope:"europe",
             projection: {
                 type: 'Robinson'
             }
