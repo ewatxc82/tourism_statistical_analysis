@@ -53,8 +53,8 @@ http://techslides.com/list-of-countries-and-capitals
 
 ### Website Design
 
--Bootstrap was used to create a theme for the page
--Javascript files contain code for creating the plots on our maps
+- Bootstrap was used to create a theme for the page
+- Javascript files contain code for creating the plots on our maps
 
 ![eurosite_1](https://media.giphy.com/media/77hnj5lZFkppdWrvqS/giphy.gif)
 
@@ -63,16 +63,16 @@ http://techslides.com/list-of-countries-and-capitals
 #### Map 1 - Tourism Arrivals
 ![euro_map_1](https://media.giphy.com/media/4XUSjIp1ebkwxnvRV3/giphy.gif)
 
--JQuery and Ajax were used to create a map that plots tourism-related arrivals from 1995-2019 in European countries we collected data on. A slider is placed in the lower left corner to enable to user to cycle through each year in the dataset. 
+- JQuery and Ajax were used to create a map that plots tourism-related arrivals from 1995-2019 in European countries we collected data on. A slider is placed in the lower left corner to enable to user to cycle through each year in the dataset. 
 
 #### Map 2 - Tourism Receipts
 ![euro_map_2](https://media.giphy.com/media/3J9LGtrFENusv3m0Hq/giphy.gif)
 
--JQuery and Ajax were used to create a map that plots growth or contraction of tourism revenue from 1995-2019 in European countries within the dataset. We've used the same slider and you can hover over each country to gather information on the year and amount of tourism receipts in the year.
+-J Query and Ajax were used to create a map that plots growth or contraction of tourism revenue from 1995-2019 in European countries within the dataset. We've used the same slider and you can hover over each country to gather information on the year and amount of tourism receipts in the year.
 
 #### Choropleth Maps
 ![euro_map_3](https://media.giphy.com/media/KilWKKuxpqDzvr8mNd/giphy.gif)
 
 ![euro_map_4](https://media.giphy.com/media/KilWKKuxpqDzvr8mNd/giphy.gif)
 
--Choropleth was used to present a differnt perspective of the data. A slider was initiated to allow the user to scroll through each year in the dataset
+- Choropleth was used to present a differnt perspective of the data. A slider was initiated to allow the user to scroll through each year in the dataset
